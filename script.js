@@ -18,6 +18,11 @@ arr.forEach(button =>{
             input.value = string;
 
          }
+        else if(e.target.innerHTML == '%'){
+            string = (parseFloat(string)/100).toString();
+            input.value = string;
+         
+         }
         else{
             string += e.target.innerHTML;
             input.value = string;
